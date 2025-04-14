@@ -170,7 +170,7 @@ const MediaGallery: React.FC<MediaGalleryProps> = ()=> {
       const isInitialLoad = !cursor;
       if (isInitialLoad) setLoading(true);
 
-      const response = await axios.get<MediaResponse>('http://localhost:3000/api/instagram-media', {
+      const response = await axios.get<MediaResponse>('https://www.eduvia.space/api/instagram-media', {
         headers: { Authorization: `Bearer ${token}` },
         params: { 
           after: cursor, 
