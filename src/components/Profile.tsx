@@ -49,7 +49,7 @@ const Profile: React.FC = () => {
           return;
         }
 
-        const response = await axios.get('https://www.eduvia.space/api/instagram-profile', {
+        const response = await axios.get('https://www.instasuite.eduvia.space/api/instagram-profile', {
           headers: {
             Authorization: `Bearer ${token}`
           }
